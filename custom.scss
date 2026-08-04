@@ -1,0 +1,190 @@
+/*-- scss:defaults --*/
+
+// Palette -------------------------------------------------------------
+$cp-ink:      #16324f;   // headings, dark navy
+$cp-body:     #1f2933;   // body text
+$cp-accent:   #0a7c86;   // teal accent (links, rules)
+$cp-warm:     #b45309;   // amber accent (challenges, emphasis)
+$cp-muted:    #5b6b7b;   // secondary text
+$cp-surface:  #f4f7f9;   // panel background
+
+$body-bg:                    #ffffff;
+$body-color:                 $cp-body;
+$link-color:                 $cp-accent;
+$selection-bg:               rgba(10, 124, 134, 0.25);
+
+$font-family-sans-serif: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+$presentation-font-size-root: 34px;
+$presentation-line-height: 1.35;
+
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-color: $cp-ink;
+$presentation-heading-font-weight: 700;
+$presentation-h1-font-size: 2.0em;
+$presentation-h2-font-size: 1.35em;
+$presentation-h3-font-size: 1.05em;
+
+$code-block-font-size: 0.72em;
+$code-color: #a13a0a;
+
+/*-- scss:rules --*/
+
+.reveal .slides section {
+  text-align: left;
+}
+
+.reveal h2 {
+  border-bottom: 3px solid $cp-accent;
+  padding-bottom: 0.18em;
+  margin-bottom: 0.6em;
+}
+
+.reveal h3 {
+  color: $cp-warm;
+  margin-bottom: 0.4em;
+}
+
+// Title slide ---------------------------------------------------------
+#title-slide {
+  text-align: left;
+
+  .title {
+    color: $cp-ink;
+    font-size: 1.9em;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  .subtitle {
+    color: $cp-accent;
+    font-size: 1.0em;
+    font-weight: 600;
+    margin-top: 0.4em;
+  }
+
+  .quarto-title-authors,
+  .author,
+  .date {
+    color: $cp-muted;
+    font-size: 0.7em;
+  }
+}
+
+// Lists ---------------------------------------------------------------
+.reveal ul,
+.reveal ol {
+  margin-left: 0.6em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+.reveal li::marker {
+  color: $cp-accent;
+}
+
+// Utility classes -----------------------------------------------------
+.small     { font-size: 0.78em; }
+.smaller   { font-size: 0.66em; }
+.smallest  { font-size: 0.55em; }
+.muted     { color: $cp-muted; }
+.accent    { color: $cp-accent; }
+.warm      { color: $cp-warm; }
+
+.center { text-align: center; }
+
+.lead {
+  font-size: 1.12em;
+  line-height: 1.4;
+}
+
+.takeaway {
+  background: $cp-surface;
+  border-left: 6px solid $cp-accent;
+  padding: 0.7em 1em;
+  margin-top: 0.6em;
+  border-radius: 0 6px 6px 0;
+}
+
+.attribution {
+  color: $cp-muted;
+  font-size: 0.5em;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+// Section-divider slides ---------------------------------------------
+.reveal section.divider {
+  h1, h2 {
+    color: #ffffff;
+    border-bottom: none;
+  }
+  p { color: rgba(255, 255, 255, 0.85); }
+}
+
+// Callouts ------------------------------------------------------------
+.reveal .callout {
+  font-size: 0.85em;
+  margin-top: 0.4em;
+}
+
+.reveal .callout.callout-style-default .callout-body {
+  font-size: 1em;
+}
+
+.reveal .callout-title p {
+  font-weight: 700;
+}
+
+// Images --------------------------------------------------------------
+.reveal .slides section img {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  margin: 0.3em auto;
+}
+
+.reveal figcaption {
+  color: $cp-muted;
+  font-size: 0.55em;
+  text-align: center;
+}
+
+// Tables --------------------------------------------------------------
+.reveal table {
+  font-size: 0.72em;
+  border-collapse: collapse;
+}
+
+.reveal table th {
+  color: $cp-ink;
+  border-bottom: 2px solid $cp-accent;
+}
+
+.reveal table td,
+.reveal table th {
+  padding: 0.25em 0.6em;
+}
+
+// Blockquote (prompts read verbatim to learners) ----------------------
+.reveal blockquote {
+  background: $cp-surface;
+  border-left: 6px solid $cp-warm;
+  box-shadow: none;
+  font-style: normal;
+  width: 100%;
+  padding: 0.6em 1em;
+}
+
+// Footer / slide numbers ---------------------------------------------
+.reveal .footer {
+  color: $cp-muted;
+  font-size: 0.42em;
+}
+
+.reveal .slide-number {
+  font-size: 0.42em;
+  background: transparent;
+  color: $cp-muted;
+}

@@ -1,0 +1,26 @@
+project:
+  type: default
+  output-dir: _slides
+  render:
+    - "*.qmd"
+
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    width: 1280
+    height: 720
+    slide-number: c/t
+    show-slide-number: all
+    chalkboard: true
+    history: false
+    hash-type: number
+    preview-links: auto
+    link-external-newwindow: true
+    footer: "GenAI in Workshops: Instructor Training Bonus Module &nbsp;·&nbsp; CC&nbsp;BY&nbsp;4.0"
+    fig-align: center
+    code-block-height: 560px
+    embed-resources: false
+
+execute:
+  echo: true
+  eval: false

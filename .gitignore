@@ -1,0 +1,7 @@
+_slides/
+.quarto/
+*.pdf
+.DS_Store
+.claude/settings.local.json
+
+/.quarto/

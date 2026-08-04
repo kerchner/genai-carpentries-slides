@@ -1,0 +1,174 @@
+---
+title: "Memory and Cognitive Load"
+subtitle: "Episode 5 · Teaching 10 min · Exercises 45 min"
+---
+
+## Questions & Objectives {.smaller}
+
+::: {.callout-tip appearance="simple"}
+### Question
+
+- How could learners' use of chatbots influence considerations of cognitive load in a workshop?
+:::
+
+::: {.callout-note appearance="simple"}
+### Objectives
+
+- Assess the suitability of chatbot responses to a novice learner's understanding.
+- Articulate a personal view of what chatbot use should be encouraged in a workshop.
+:::
+
+## Three Categories of Cognitive Load {.smaller}
+
+[Sweller's model describes three categories of cognitive load](https://carpentries.github.io/instructor-training/05-memory.html#the-theory-of-cognitive-load):
+
+::: {.columns}
+::: {.column width="33%"}
+### Intrinsic
+Inherent to the material being learned.
+:::
+::: {.column width="33%"}
+### Germane
+The effort of building and integrating new mental models.
+:::
+::: {.column width="33%"}
+### Extraneous
+Everything else — distraction, poor presentation, irrelevant detail.
+:::
+:::
+
+::: {.takeaway}
+Our goal as Instructors (and Lesson Developers) is to **eliminate extraneous cognitive load**. But intrinsic and germane cognitive load remain.
+
+Some cognitive load is **unavoidable and essential for learning**. This is desirable cognitive load — but the friction can feel difficult for learners.
+:::
+
+## Cognitive Offloading {.smaller}
+
+GenAI tools offer a tempting alternative, giving learners the opportunity for **"cognitive offloading"**.
+
+::: {.callout-warning appearance="simple"}
+If this eliminates or reduces **germane** cognitive load, the learner is **less likely to retain** the relevant information required for learning.
+:::
+
+If learners offload parts of the process that promote learning, they will benefit very little from participating in the workshop.
+
+## Exercises Are the Example {.smaller}
+
+Practising new skills and applying new concepts facilitates the transfer of information from learners' **working memory** to their **long-term memory**.
+
+Completion of exercises also promotes **metacognition**: a learner's awareness that they are learning, which itself promotes further learning.
+
+::: {.takeaway}
+If learners feed the exercises straight into a chatbot, they are **much less likely to learn** what is being taught.
+:::
+
+## Lessons Are Designed for Load {.smaller}
+
+Carpentries lessons and the exercises within them have been carefully designed to help Instructors [manage learners' cognitive load](https://carpentries.github.io/instructor-training/05-memory.html#attention-management-in-your-workshop) throughout a workshop.
+
+In many cases, there will be **more than one possible way** to solve an exercise. But learners cannot be expected to have all of the conceptual knowledge required to devise some of these possible solutions.
+
+::: {.callout-note appearance="simple"}
+For example, a Python exercise might be solved in one line with a **list comprehension** or a **lambda function** — but the lesson uses neither, because a more easily interpretable solution is required for novice learners.
+:::
+
+## Exercise: Chatbot Responses and Cognitive Load {.smaller}
+
+Refer back to an earlier exercise, where you tried to solve an exercise from one of our lessons with a chatbot. Consider the code that the chatbot produced.
+
+- What **strengths and weaknesses** do you observe in the chatbot's solutions?
+- What **reasoning** are you using to evaluate or classify them?
+- Would a **novice learner** be able to use the same reasoning to evaluate the response?
+- Does the solution include **additional complexity, concepts, etc.** that could be distracting (introducing extraneous cognitive load) for a novice learner?
+
+::: {.notes}
+Challenge. The next two slides give a worked example (the hint from the lesson) if participants need a prompt.
+:::
+
+## Hint: An Example Exercise {.smaller}
+
+From the [Software Carpentry Programming with R lesson](https://swcarpentry.github.io/r-novice-inflammation/04-cond.html):
+
+> Write a function `plot_dist` that plots a boxplot if the length of the vector is greater than a specified threshold and a stripchart otherwise. To do this you'll use the R functions `boxplot` and `stripchart`.
+
+**The solution provided in the lesson:**
+
+```r
+plot_dist <- function(x, threshold) {
+  if (length(x) > threshold) {
+    boxplot(x)
+  } else {
+    stripchart(x)
+  }
+}
+```
+
+## Hint: A Solution Produced by duck.ai {.smaller}
+
+```r
+plot_dist <- function(x, threshold = 30, main = NULL, xlab = NULL, ylab = NULL, ...) {
+  if (!is.numeric(x)) stop("x must be numeric")
+  if (is.null(main)) main <- deparse(substitute(x))
+  if (is.null(xlab)) xlab <- ""
+  if (is.null(ylab)) ylab <- ""
+  n <- length(x)
+  if (n > threshold) {
+    boxplot(x, main = main, xlab = xlab, ylab = ylab, ...)
+  } else {
+    stripchart(x, method = "jitter", vertical = TRUE, pch = 16,
+    main = main, xlab = xlab, ylab = ylab, ...)
+  }
+}
+```
+
+::: {.small}
+How many concepts here have not yet been taught? Default arguments, `...`, `stop()`, `is.null()`, `deparse(substitute())`, plotting parameters…
+:::
+
+## Discussion: Does Telling It You're a Novice Help? {.smaller}
+
+Now try repeating the same prompt used above, but add:
+
+> I am a novice learning to program for the first time.
+
+- What effect, if any, did this have on the **complexity** of the solution produced?
+- If the response is still too complex, can you **adjust the prompt further** to make it more helpful to a novice?
+
+## Discussion: Copy-Paste vs Peeking at the Solution {.smaller}
+
+Several of our exercises have been concerned with learners copy/pasting exercises to produce solutions with a chatbot.
+
+However, our lessons are **publicly and freely available** to visit online, and many exercises on these pages include solutions.
+
+::: {.callout-important appearance="simple"}
+In your opinion, what — if any — difference is there between:
+
+- a learner pasting the text of an exercise into a chatbot and trying out the code produced in response, and
+- the learner expanding the solution box on the lesson webpage and pasting the code they find there into their environment?
+:::
+
+## Discussion: What Is Acceptable? {.smaller}
+
+**Think** about your answer to the following questions, and make some notes:
+
+- Is it possible for novice learners to use a genAI chatbot in a workshop **without threatening their ability to learn** the skills we aim to teach?
+- If so, what would that use look like?
+
+**Pair** with a partner. Compare your answers, and discuss any points where you disagree.
+
+**Share** the key points of your discussion with the rest of the group.
+
+::: {.callout-note appearance="simple"}
+Did you reach a consensus? If not, on what points did you disagree?
+:::
+
+::: {.notes}
+Think-pair-share. This is the longest activity in the episode — budget time accordingly.
+:::
+
+## Key Points
+
+::: {.callout-tip appearance="simple"}
+- Chatbot use that removes **germane cognitive load** may impede learning.
+:::

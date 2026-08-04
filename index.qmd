@@ -1,0 +1,99 @@
+---
+title: "GenAI in Workshops"
+subtitle: "Instructor Training Bonus Module — Overview & Setup"
+---
+
+## About This Module
+
+::: {.lead}
+An extension to [The Carpentries Instructor Training](https://carpentries.github.io/instructor-training/), designed to empower Instructors to respond to learners' use of generative AI (genAI) chatbot tools in workshops.
+:::
+
+::: {.takeaway}
+Instead of presenting proven strategies, this module revisits the **key concepts that underpin the Instructor Training curriculum** and examines the implications of genAI tools in that context.
+:::
+
+::: {.notes}
+This overview deck is for Trainers to set the scene before Episode 1. It covers the module's objectives, prerequisites, and schedule.
+:::
+
+## Learning Objectives {.smaller}
+
+After following this bonus module, Instructors will be able to:
+
+- Identify challenges and opportunities presented by genAI chatbots to novices learning to adopt computational research practices.
+- Engage learners in discussions of genAI chatbot use in the context of a Carpentries workshop.
+- Build a positive learning environment that encourages openness and critical analysis of prompts given to a chatbot and outputs received.
+- Discuss the implications of expert awareness gaps in the context of chatbot use.
+- Advise learners on how to increase the likelihood of a genAI chatbot producing output that will help them learn.
+- Summarise existing studies of the effects of genAI tool usage on software development productivity.
+- Discuss how the skills that learners need to develop, and their motivation to acquire those skills, are affected by the coding capabilities of genAI tools.
+
+## Who Is This For?
+
+::: {.callout-note appearance="simple"}
+### Prerequisites
+
+This bonus module is designed for **Carpentries Instructors** and anyone else who has participated in [Instructor Training](https://carpentries.org/instructor-training/) or [Learner Centered Teaching](https://carpentries.org/learner-centered-teaching/).
+
+It is **not** necessary to have completed certification as a Carpentries Instructor.
+:::
+
+## Worth Reviewing Beforehand
+
+If it has been a while since you participated in Instructor Training / Learner Centered Teaching, you may benefit from reviewing these episodes of the Instructor Training curriculum:
+
+- [Building Skill with Practice](https://carpentries.github.io/instructor-training/02-practice-learning.html)
+- [Expertise and Instruction](https://carpentries.github.io/instructor-training/04-expertise.html)
+- [Memory and Cognitive Load](https://carpentries.github.io/instructor-training/05-memory.html)
+- [Building Skill with Feedback](https://carpentries.github.io/instructor-training/06-feedback.html)
+- [Motivation and Demotivation](https://carpentries.github.io/instructor-training/08-motivation.html)
+
+## Setup {.smaller}
+
+No specialist software is required. **You will need a modern web browser.**
+
+::: {.callout-important}
+### Chatbot Use Required
+
+Exercises and activities in this bonus module require the use of a genAI chatbot tool by participants.
+
+Direct use of the technology grounds the discussion and equips Instructors with an understanding of learners' experiences with these tools, their capabilities, and their idiosyncrasies.
+:::
+
+If you have an account for a chatbot application (e.g. ChatGPT, Claude, Gemini, Mistral Vibe), you can use that during the training. If you do not already have an account, there is no need to create one unless you want to.
+
+Participants who prefer not to create an account can use [duck.ai](https://duck.ai/), which does not require a login and has greater privacy protections than some other chatbot systems.
+
+## Schedule {.smaller}
+
+| # | Episode | Teaching | Exercises |
+|:--|:--------|---------:|----------:|
+| 1 | [Welcome](01-welcome.html) | 15 min | 15 min |
+| 2 | [The GenAI Landscape](02-landscape.html) | 10 min | — |
+| 3 | [Building Skill with Practice](03-practice.html) | 10 min | 25 min |
+| 4 | [Expertise and Instruction](04-expertise.html) | 10 min | 10 min |
+| 5 | [Memory and Cognitive Load](05-memory.html) | 10 min | 45 min |
+| 6 | [Building Skill with Feedback](06-feedback.html) | 10 min | 20 min |
+| 7 | [How Not to be Wrong About AI](07-wrong.html) | 20 min | 10 min |
+| 8 | [Wrap-up](08-wrap-up.html) | 5 min | 35 min |
+|   | **Total** | **90 min** | **160 min** |
+
+: {tbl-colwidths="[6,54,20,20]"}
+
+## Learner Profile: Jesse {.smaller}
+
+- Jesse, 28, is completing a doctorate in ecology and applying for teaching positions at several colleges. They have been a certified Carpentries Instructor for three years, and have helped teach five workshops in that time.
+- Jesse uses R almost every day, and is comfortable enough with Python and Git to teach them. They started experimenting with generative AI tools a year ago to write SQL queries and convert their R Markdown projects to Quarto.
+- Jesse has misgivings about people becoming dependent on AI tools, but accepts that most of the learners in their workshops and courses are going to use them. They would therefore like to learn more about how best to use them and when not to.
+- The biggest challenge Jesse faces is the speed with which AI technology is evolving, and the uncoordinated and inconsistent way their current institution and those they are applying to for jobs are responding.
+
+## Let's Begin {.divider background-color="#16324f"}
+
+::: {.lead}
+[Episode 1 — Welcome](01-welcome.html)
+:::
+
+::: {.attribution}
+Slides adapted from *GenAI in Workshops: Instructor Training Bonus Module*, The Carpentries ([source](https://github.com/carpentries/instructor-training-genai)), CC BY 4.0.
+:::

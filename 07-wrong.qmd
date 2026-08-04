@@ -1,0 +1,146 @@
+---
+title: "How Not to be Wrong About AI"
+subtitle: "Episode 7 · Teaching 20 min · Exercises 10 min"
+---
+
+## Questions & Objectives {.smaller}
+
+::: {.callout-tip appearance="simple"}
+### Questions
+
+- Why are most claims about the impact of AI on productivity not reliable?
+- What methods would be more reliable?
+- What can we practically do in a classroom setting?
+:::
+
+::: {.callout-note appearance="simple"}
+### Objectives
+
+- Explain why obvious measures of programming productivity are misleading.
+- Describe how standard scientific research methods could provide less ambitious but more reliable answers.
+- Explore a practical alternative to those methods that can be used in the classroom.
+:::
+
+## 55% Faster {.divider background-color="#16324f"}
+
+::: {.lead}
+In 2023, GitHub announced their tools made developers **55% faster** [(Peng et al 2023)](09-references.html).
+
+That number appeared in every executive presentation for a year.
+
+**This episode teaches you how to tell if you should believe it or not.**
+:::
+
+## Evaluating Claims {.smaller}
+
+Claims can be evaluated from several angles:
+
+- **Conclusion validity**: Was the sample large enough? Are effect sizes reported?
+- **Internal validity**: Was there a control group? Was assignment random? Could novelty or learning effects explain the result?
+- **Construct validity**: Does the measurement actually capture the claim?
+- **External validity**: Who are the subjects, and are they representative of the population the conclusions address?
+
+::: {.callout-note appearance="simple"}
+This is all **Research Methods 101**, particularly for people in disciplines like psychology or medicine.
+
+However, most undergraduate programs in computer science don't teach research methods, so most programmers **don't even know what they don't know**. At the same time, most organizations (even ones staffed by scientists) don't have the time or funding to look at themselves this carefully.
+:::
+
+## Why Productivity is Hard to Define {.smaller}
+
+Manufacturing productivity means **widgets per hour**: both terms are measurable.
+
+But software output is **not homogeneous**: a ten-line bugfix may be worth more than a thousand-line feature.
+
+::: {.takeaway}
+An entire book basically says "measuring programmers' productivity is really hard" over and over again [(Sadowski and Zimmerman 2019)](09-references.html).
+
+One reason is that much of software work is **invisible**: a field study found developers only spend **25% of their day** actually writing code [(Meyer et al 2017)](09-references.html).
+:::
+
+Reading, reviewing, and helping colleagues doesn't show up in simple metrics.
+
+## Does the Measurement Capture the Concept? {.smaller}
+
+**Lines of code written per day** fails this test: you can write more lines by making code worse.
+
+Most other simple measures fail as well — but that doesn't stop companies from publishing claims based on them:
+
+- **Timing artificial tasks**: a 90-minute greenfield task (starting with an empty file and building from scratch) does not predict real work, which almost always involves understanding and modifying existing code.
+- **Measuring only the easy half**: AI makes code generation faster, but this ignores review time, time spent debugging confidently wrong suggestions, and time spent addressing security vulnerabilities.
+- **Before/after measures with no control group**: you cannot separate the effect of AI from other things that changed (hiring, infrastructure changes, etc.).
+- **Asking developers if they feel more productive**: feeling productive is not the same as being productive, and the **novelty effect** inflates self-reports for weeks.
+- **Comparing volunteers to non-volunteers**: early adopters are usually already higher performers — and again, the novelty effect produces misleading results on a timescale of weeks.
+
+## Minimum Viable Rigour {.smaller}
+
+So what *can* we tell about the impact of AI?
+
+One place to look is **User Experience (UX) research**, which has also had to deal with a myriad of confounding factors, accelerated timescales, and the need to find something actionable.
+
+::: {.columns}
+::: {.column width="50%"}
+### Formative evaluation
+Studying something **in order to improve it**.
+
+Small samples, rapid iteration, qualitative focus.
+
+*"What is wrong?"* — not *"how often?"*
+:::
+::: {.column width="50%"}
+### Summative evaluation
+Assessing whether something **works in general**.
+
+More participants, controlled conditions, quantitative metrics.
+:::
+:::
+
+::: {.small}
+You may have identified parallels to the distinction between formative and summative evaluation for **assessing learning**.
+:::
+
+## Guerilla Research {.smaller}
+
+User experience groups in industry use the term **"guerilla research"** for formative evaluation, and have developed rough-and-ready techniques for getting *something* useful with the time and resources they have [(Hall 2019)](09-references.html).
+
+::: {.takeaway}
+For example, [Nielsen and Landauer (1993)](09-references.html) found that a **think-aloud session with five participants** is typically enough to identify most problems in a specific workflow for a specific user group.
+:::
+
+## In the Classroom {.smaller}
+
+As Instructors, you have the opportunity to run a **formative evaluation session** each time you teach with AI coding tools.
+
+For example, ask learners to verbalize their thoughts as they work: *"say out loud whatever you are thinking"*.
+
+It is most useful to do this on a **concrete task**, not open exploration, so that you and learners can compare experiences, and so that there is a direction or purpose to the learner's thinking. For example:
+
+> Given this pull request, use the AI assistant to write a one-paragraph summary of the changes.
+
+## When You Are Doing This {.smaller}
+
+- Pay particular attention to where participants **hesitate, backtrack, or state expectations that turn out to be wrong**.
+- **Do not help when they get stuck**: you want to observe their reasoning process before trying to extend or correct it.
+- **Summarize observations** at the end and have other learners compare with their own experience.
+
+## Discussion: Practicing This Exercise {.smaller}
+
+Work in **groups of 3**.
+
+One person builds a script to find **duplicate files** (i.e. files with identical content but different names) in or below a directory, searching recursively. The motivation: detecting redundant copies of datasets.
+
+They use an AI coding assistant **while thinking aloud** for at most **5 minutes**. The others watch and take notes.
+
+::: {.callout-important appearance="simple"}
+At the end, compare the observers' notes to each other and to the subject's recollection of what they thought they were doing.
+
+**What would you tell the next person to do — in particular, to do differently — based on what you observed?**
+:::
+
+## Key Points {.smaller}
+
+::: {.callout-tip appearance="simple"}
+- There is **no generally-accepted way to measure the productivity of programmers**, which makes measuring the impact of AI on productivity problematic.
+- Most of the claims being made about AI's impact **would not pass scrutiny** in an introductory course on research methods.
+- **Guerilla research methods** used by User Experience researchers, such as think-aloud protocols, can reveal opportunities for improvement in specific workflows for specific users.
+:::

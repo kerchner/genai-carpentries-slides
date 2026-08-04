@@ -1,0 +1,83 @@
+---
+title: "Building Skill with Feedback"
+subtitle: "Episode 6 · Teaching 10 min · Exercises 20 min"
+---
+
+## Questions & Objectives {.smaller}
+
+::: {.callout-tip appearance="simple"}
+### Question
+
+- How might learners' use of genAI tools impact the pathways and mechanisms of feedback in a workshop?
+:::
+
+::: {.callout-note appearance="simple"}
+### Objectives
+
+- Identify possible impacts of genAI chatbot use on the established feedback mechanisms in a workshop.
+- Discuss how Instructors can encourage learners to continue to provide feedback in a workshop while interacting with a chatbot.
+:::
+
+## Exercise: Feedback Mechanisms {.smaller}
+
+::: {.callout-important appearance="simple"}
+- What is one way that a **learner** receives feedback on their work or understanding during a workshop? How might the learner's use of a chatbot disrupt that feedback mechanism?
+
+- What is one way that an **Instructor** receives feedback on learners' understanding during a workshop? How might the learner's use of a chatbot disrupt that feedback mechanism?
+:::
+
+::: {.notes}
+Challenge. Collect answers from the group before revealing the solution slide.
+:::
+
+## Solution: Feedback Mechanisms {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+### For learners
+
+- Exercises and worked solutions.
+- Comments from Instructors, Helpers, and other workshop participants.
+- Their impressions of their own ability to keep up with the pace of instruction, understand what is being taught, etc.
+:::
+::: {.column width="50%"}
+### For Instructors
+
+- Sticky note feedback.
+- Facial expressions and demeanors of learners.
+- Results of exercises and other assessments.
+- Questions asked and explanations given by learners.
+:::
+:::
+
+## A Crucial Pathway Disappears {.smaller}
+
+One challenge that learners' use of genAI tools presents to a workshop is that it removes [a crucial pathway of feedback](https://carpentries.github.io/instructor-training/06-feedback.html) to the Instructor.
+
+::: {.takeaway}
+If a learner turns to a chatbot for help **before** they turn to a helper or Instructor, the Instructor will never know what question they had, what they were finding difficult, or where they were stuck.
+:::
+
+This means the Instructor **cannot identify trends** in what the class is finding difficult, and misses the opportunity to clarify the key points.
+
+## Why the Learning Environment Matters {.smaller}
+
+This is another reason why it is so important to create and maintain a **positive learning environment** in a workshop.
+
+If Instructors and helpers appear **approachable** to learners — encouraging them to speak up when they are stuck, and to share what they are getting from genAI tools if/when they use them — these feedback pathways are more likely to stay open.
+
+::: {.callout-warning appearance="simple"}
+Nevertheless, you and your helpers may make all of these efforts and **still observe learners using a chatbot before talking to a human**.
+:::
+
+## Discussion: How Can We Encourage Feedback? {.smaller}
+
+- How could Instructors encourage learners to **speak to them or a helper** before resorting to a chatbot?
+- What strategies could Instructors implement in a workshop to encourage learners to be **open** about when and how they are using genAI while they learn?
+- Can you identify any ways that learners' use of genAI could be **harnessed as a teaching opportunity** in a workshop?
+
+## Key Points
+
+::: {.callout-tip appearance="simple"}
+- It can be difficult to gather helpful feedback if learners are using a chatbot instead of requesting assistance from Instructors and helpers.
+:::
